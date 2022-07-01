@@ -48,7 +48,7 @@
         <source-file src="src/ios/Diagnostic_Location.m" />
 
         <framework src="CoreLocation.framework" />
-
+        <!--
         <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription" comment="Default usage descriptions: override as necessary in .plist">
             <string>This app requires access to your location when the screen is on and the app is displayed.</string>
         </config-file>
@@ -60,6 +60,7 @@
         <config-file target="*-Info.plist" parent="NSLocationAlwaysUsageDescription" comment="iOS 10">
             <string>This app requires constant access to your location in order to track your position, even when the screen is off or the app is in the background.</string>
         </config-file>
+        -->
         <!--END_MODULE LOCATION-->
 
         <!--BEGIN_MODULE BLUETOOTH-->
@@ -118,7 +119,7 @@
 
         <framework src="Photos.framework" />
         <framework src="AVFoundation.framework" />
-
+        <!--
         <config-file target="*-Info.plist" parent="NSCameraUsageDescription">
             <string>This app requires camera access to function properly.</string>
         </config-file>
@@ -126,6 +127,7 @@
         <config-file target="*-Info.plist" parent="NSPhotoLibraryUsageDescription">
             <string>This app requires photo library access to function properly.</string>
         </config-file>
+        -->
 
         <header-file src="src/ios/Diagnostic_Camera.h" />
         <source-file src="src/ios/Diagnostic_Camera.m" />
